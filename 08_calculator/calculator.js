@@ -11,14 +11,18 @@ return array.reduce((total, current) => total + current, 0);
 };
 
 const multiply = function(array) {
-  return array.reduce((total, current) => total + current, 0);
+  return array.reduce((product, current) => product * current, 0);
 };
 
-const power = function() {
-	return a ** b
+const power = function(a, b) {
+	return Math.pow(a, b)
 };
-const factorial = function() {
-	return a % b
+const factorial = function(n) {
+	let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
+  }
+  return product;
 };
 
 // Do not edit below this line
